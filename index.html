@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Kostiantyn Kartamyshev</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9yug7q');
-  src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9yug7q') format('truetype'),
-    url('fonts/icomoon.woff?9yug7q') format('woff'),
-    url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?z1lat9');
+  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+    url('fonts/icomoon.woff?z1lat9') format('woff'),
+    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,20 +24,64 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
-  content: "\e905";
+.icon-gitlab .path1:before {
+  content: "\e906";
+  color: rgb(252, 109, 38);
 }
-.icon-trophy:before {
-  content: "\e605";
+.icon-gitlab .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
 }
-.icon-office:before {
-  content: "\e606";
+.icon-gitlab .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
 }
-.icon-clock:before {
-  content: "\e60a";
+.icon-gitlab .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
 }
-.icon-reddit:before {
-  content: "\e609";
+.icon-gitlab .path5:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path6:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path7:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path8:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
 }
 .icon-telegram:before {
   content: "\e904";
@@ -147,25 +191,20 @@
 .icon-facebook:before {
   content: "\f230";
 }
-.icon-meetup .path1:before {
-  content: "\e901";
-  color: rgb(255, 255, 255);
+.icon-instagram:before {
+  content: "\e905";
 }
-.icon-meetup .path2:before {
-  content: "\e902";
-  margin-left: -1.5em;
-  color: rgb(240, 1, 1);
+.icon-trophy:before {
+  content: "\e605";
 }
-.icon-meetup .path3:before {
-  content: "\e903";
-  margin-left: -1.5em;
-  color: rgb(3, 3, 3);
+.icon-office:before {
+  content: "\e606";
 }
-.icon-blogger:before {
-  content: "\e900";
+.icon-clock:before {
+  content: "\e60a";
 }
-.icon-exercism:before {
-  content: "\e601";
+.icon-reddit:before {
+  content: "\e609";
 }
 .icon-profile:before {
   content: "\e600";
@@ -185,12 +224,6 @@
 .icon-newspaper:before {
   content: "\e607";
 }
-.icon-dots-three-horizontal:before {
-  content: "\e60b";
-}
-.icon-thumbs-up:before {
-  content: "\e604";
-}
 .icon-chevron-down:before {
   content: "\e60c";
 }
@@ -206,7 +239,6 @@
 .icon-board:before {
   content: "\e608";
 }
-
 
 .relative {
   position: relative;
@@ -247,6 +279,15 @@
 .label-keyword:last-child {
   margin-right: 0;
 }
+.label-keyword p {
+  margin: 0;
+}
+.label-keyword a {
+  color: white;
+}
+.label-keyword a:hover {
+  text-decoration: none;
+}
 .link-disguise {
   color: inherit;
 }
@@ -263,7 +304,7 @@
 }
 .fs-lg {
   font-size: 1.33333333em;
-  line-height: .75em;
+  line-height: 0.75em;
   vertical-align: -15%;
 }
 .fs-2x {
@@ -284,10 +325,11 @@
   padding: 0;
   outline: none !important;
 }
+/* the version when the icon file is last updated */
 @font-face {
   font-family: 'jst-elegant';
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -958,29 +1000,65 @@ body {
     page-break-before: always;
   }
 }
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#publications"><i class="mr-10 icon-newspaper"></i>Publications</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li><li><a href="#references"><i class="mr-10 icon-thumbs-up"></i>References</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Kostiantyn Kartamyshev" src="assets/picture.jpeg" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Kostiantyn Kartamyshev</b></h3><h5 class="text-muted" itemprop="jobTitle">Frontend Developer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Alphen aan den Rijn, Netherlands, NL</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+31 63 932 77 24</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:kartamyshev.k@gmail.com" itemprop="email">kartamyshev.k@gmail.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://kartamyshev.github.io/blog" target="_blank">http://kartamyshev.github.io/blog</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Russian, Ukrainian, Spanish, Dutch, German, Portuguese</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="https://github.com/kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on Github"></a><a class="fs-2x social-link link-medium icon-medium" href="https://medium.com/@kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on Medium"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/konstantin-kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on LinkedIn"></a><a class="fs-2x social-link link-facebook icon-facebook" href="https://www.facebook.com/konstantin.kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on Facebook"></a><a class="fs-2x social-link link-facebook icon-newspaper" href="./assets/Kartamyshev-Kostiantyn-Frontend-Developer-CV.pdf" target="_blank" data-toggle="tooltip" title="Download .pdf"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>My name is Kostiantyn Kartamyshev. I am working as a Frontend Developer at <a href="https://eclecticiq.com/">EclecticIQ</a>. I have <strong>around 10 years of experience</strong> in the field of web development. I did a lot of <strong>React</strong> while working on previous projects. I love it. I'm also passionate about Angular, Vue, other great libraries, frameworks and modern approaches.</p>
-</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Frontend developer</strong>,&nbsp;<a href="https://eclecticiq.com/" target="_blank">EclecticIQ</a></p><p class="text-muted"><small><span class="space-right">Oct, 2021 - Present</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Project:</strong> Thread Intelligence Platform.</p>
-</li><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Typescript migration, gradual rewriting of legacy codebase, implementation of design system that is used in several projects.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> React, Redux, TypeScript, Webpack, lodash, tailwind.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="http://www.epo.org/" target="_blank">European Patent Office</a></p><p class="text-muted"><small><span class="space-right">Feb, 2018 - Sep, 2021</span><span><i class="icon-clock mr-5"></i>3 years 7 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Project:</strong> World patent search system.</p>
-</li><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Client-side application development.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> React, MobX, TypeScript, Webpack, ramda, scss.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="http://www.softeq.by/" target="_blank">Softeq Development</a></p><p class="text-muted"><small><span class="space-right">Jun, 2017 - Jan, 2018</span><span><i class="icon-clock mr-5"></i>8 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Project:</strong> Trip Advisor Add-in for new Skype app (iOS&amp;Android).</p>
-</li><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Client-side application development. Interaction with Trip Advisor api with GraphQl (apollo-client), Using skype-sdk functionality (share, actions, components etc).</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> React, Babel, GraphQL, Flow, Webpack, lodash, less.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="http://www.specific-group.by/" target="_blank">Specific-Group</a></p><p class="text-muted"><small><span class="space-right">Jan, 2015 - Jun, 2017</span><span><i class="icon-clock mr-5"></i>2 years 5 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Development HTML5 mobile &amp; desktop Single Page Apps for banking. Implementation tasks of different complexity and range - from simple html layout design to building charts using SVG, other UI-components with animations (RAF, CSS) and dynamically loaded data from the server, implementation of service calls based on swagger definitions.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> Webpack, node.js, ReactJS, Flummox/Redux, ES6, Babel, TypeScript, lodash, less, svg.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="https://topmall.ua/" target="_blank">Topmall.ua</a></p><p class="text-muted"><small><span class="space-right">Jan, 2014 - Sep, 2014</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Accompanying the online store, support client-side technologies and existing functionality. Complete responsive revision.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> SASS (compass), Javascript, AngularJS, TWIG template engine, PHP, Symfony, Bitbucket, JIRA.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>HTML layout designer, Frontend developer</strong>,&nbsp;<a href="https://msocialproduction.ru/" target="_blank">M-Social</a></p><p class="text-muted"><small><span class="space-right">Jan, 2013 - Jan, 2014</span><span><i class="icon-clock mr-5"></i>1 year 1 month</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Client-side development, layout and code maintenance throughout the life of projects, interaction with the server-side written in JAVA.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> HTML (Jade, HAML), CSS (SASS, LESS, Stylus, Myth, Roole), JS, JS-libraries (jQuery, underscore), frameworks (Angular, Ember), AJAX, CoffeeScript, BEM and others.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>HTML layout designer</strong>,&nbsp;<a href="http://anstyle.ru/" target="_blank">Anstyle</a></p><p class="text-muted"><small><span class="space-right">Nov, 2011 - Jan, 2013</span><span><i class="icon-clock mr-5"></i>1 year 3 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Supporting, updating, editing cross-browser layout of sites.</p>
-</li><li class="mop-wrapper"><p><strong>Used technologies:</strong> HTML, CSS, JS, jQuery, jQueryUI.</p>
-</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong></strong><div class="space-top labels"><span class="label label-keyword">Javascript</span><span class="label label-keyword">React</span><span class="label label-keyword">Github, Bitbucket</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong></strong><div class="space-top labels"><span class="label label-keyword">TypeScript</span><span class="label label-keyword">mobX, Redux</span><span class="label label-keyword">lodash, ramda</span><span class="label label-keyword">CSS, LESS, SASS, Stylus</span><span class="label label-keyword">BEM</span><span class="label label-keyword">Webpack</span><span class="label label-keyword">Git</span><span class="label label-keyword">jQuery</span><span class="label label-keyword">AJAX</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Intermediate" data-placement="left"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong></strong><div class="space-top labels"><span class="label label-keyword">Vue.js</span><span class="label label-keyword">Angular</span><span class="label label-keyword">TDD (unit, integration, e2e etc)</span><span class="label label-keyword">Node.js</span><span class="label label-keyword">PostCSS</span><span class="label label-keyword">HAML, Pug (Jade)</span><span class="label label-keyword">TWIG</span><span class="label label-keyword">SVN</span><span class="label label-keyword">SVG</span><span class="label label-keyword">REST</span><span class="label label-keyword">Flummox</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left"><div class="skill-progress beginner"></div></div><div class="skill-info"><strong></strong><div class="space-top labels"><span class="label label-keyword">CoffeeScript</span><span class="label label-keyword">XML/Xslt</span><span class="label label-keyword">MongoDB</span><span class="label label-keyword">GraphQL</span><span class="label label-keyword">Flow</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Engineering and Ecology, Master,&nbsp;</strong>Kyiv National University of Construction and Architecture</p><p class="text-muted clear-margin"><small>Jun, 2007 - Jun, 2002</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Management, Master,&nbsp;</strong>Kyiv National University of Construction and Architecture</p><p class="text-muted clear-margin"><small>Jun, 2008 - Jun, 2005</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="publications"><div class="icon"><i class="fs-lg icon-newspaper"></i><span class="mobile-title">Publications</span></div><div class="info"><h4 class="title text-uppercase">Publications</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="https://medium.com/@kartamyshev/how-to-learn-foreign-languages-judgement-call-4f180ca373da" target="_blank">How to learn foreign languages. Judgement call</a>&nbsp;,&nbsp;</strong>kartamyshev</p><p class="text-muted"><small>Published on: Nov 26, 2016</small></p><div class="mop-wrapper"><p>The article about foreign languages overall, the ways of learning, challenges, problems each person faces and how to solve them.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="https://habrahabr.ru/post/243675/" target="_blank">About agile methodology</a>&nbsp;,&nbsp;</strong>kartamyshev</p><p class="text-muted"><small>Published on: Nov 19, 2014</small></p><div class="mop-wrapper"><p>Thoughts about agile, workflow, communication between developers etc.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin"><strong><a href="https://habrahabr.ru/post/285670/" target="_blank">IT-immigration of the Ukrainian to Minsk</a>&nbsp;,&nbsp;</strong>kartamyshev</p><p class="text-muted"><small>Published on: Oct 15, 2014</small></p><div class="mop-wrapper"><p>The article about relocation to Minsk.</p>
-</div></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Everything</strong></p><div class="space-top labels"><span class="label label-keyword">Music</span><span class="label label-keyword">Sound Recording</span><span class="label label-keyword">Guitar</span><span class="label label-keyword">Languages</span><span class="label label-keyword">Travelling</span><span class="label label-keyword">Reading</span><span class="label label-keyword">Cars</span></div></li></ul></div></div></div><div class="detail" id="references"><div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References</span></div><div class="info"><h4 class="title text-uppercase">References</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested">Oleksandr Panteleimonov<blockquote class="quote"><div class="mop-wrapper"><p>During our cooperation Konstantin showed himself as a professional in the field of HTML (5) / CSS3 (SASS) / JS. He uses modern tools and approaches in the field of front-end, works well in a team with other front-end / back-end developers.</p>
-</div></blockquote></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Kostiantyn Kartamyshev" src="assets/picture.jpeg" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Kostiantyn Kartamyshev</b></h3><h5 class="text-muted" itemprop="jobTitle">Javascript Developer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Alphen aan den Rijn, Netherlands, NL</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+31 63 932 77 24</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:kartamyshev.k@gmail.com" itemprop="email">kartamyshev.k@gmail.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://kartamyshev.github.io/blog" target="_blank">http://kartamyshev.github.io/blog</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, Dutch, Spanish, Ukrainian, Russian</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="https://github.com/kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on Github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/konstantin-kartamyshev" target="_blank" data-toggle="tooltip" title="Kostiantyn Kartamyshev on LinkedIn"></a><a class="fs-2x social-link link-facebook icon-newspaper" href="./assets/Kartamyshev-Kostiantyn-Frontend-Developer-CV.pdf" target="_blank" data-toggle="tooltip" title="Download .pdf"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Senior JavaScript Engineer with 13 years of experience in web development. Born and raised in Ukraine, reside in The Netherlands since 2018, now hold Dutch citizenship.</p>
+<p>My main strength lies in Frontend development with focus on TypeScript and React, but I have experience with other frameworks and libraries (Angular, Vue, web components etc), Python and Node.js. Dedicated and passionate about building high-quality, scalable, and maintainable applications for the business having customer problem in mind. I thrive in a challenging fast paced environment where I can enhance my skills further. Highly collaborative, I get energized from working as a part of a scrum team and by coaching less senior team members.</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Senior Frontend developer</strong>,&nbsp;<a href="https://eclecticiq.com/" target="_blank">EclecticIQ</a></p><p class="text-muted"><small><span class="space-right">Oct, 2021 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>EclecticIQ is a global cybersecurity company providing an advanced AI-embedded Threat Intelligence Platform that helps organizations detect, analyze, and respond to critical cyber threats.</p>
+</div><ul><li class="mop-wrapper"><p><strong>Modernization &amp; Migration</strong> – Led the migration of a large-scale React codebase to newer versions, improving performance and maintainability. Also led transition from JavaScript to TypeScript.</p>
+</li><li class="mop-wrapper"><p><strong>Codebase Refactoring &amp; Legacy Maintenance</strong> – Systematically refactored and rewrote legacy code, implementing architectural patterns to simplify maintenance and improve scalability.</p>
+</li><li class="mop-wrapper"><p><strong>Testing &amp; CI/CD Enhancements</strong> – Decoupled end-to-end Cypress tests from the UI repository. Contributed to backend codebase (Python) and CI/CD pipelines (GitLab).</p>
+</li><li class="mop-wrapper"><p><strong>Design System Implementation</strong> – Developed and maintained a design system used across multiple projects, ensuring UI consistency, reusability, and efficient collaboration between design and engineering teams.</p>
+</li><li class="mop-wrapper"><p><strong>AI &amp; User Experience Improvements</strong> – Integrated Large Language Models (OpenAI, Ollama, Perplexity) to enhance user experience, leveraging AI-driven features to improve interactivity and usability.</p>
+</li><li class="mop-wrapper"><p><strong>Cross-Functional Collaboration &amp; Maintenance</strong> – Regularly engaged in face-to-face communication with product managers, backend engineers and designers. Worked as a part of scrum team. Ensured the frontend ecosystem remained up to date by managing dependencies and keeping node modules up-to-date.</p>
+</li><li class="mop-wrapper"><p><strong>Stack</strong>: React, TypeScript, Next.js, vite, less, Tailwind CSS, React Query, Redux, react-hook-form, Lodash, GitLab CI/CD.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Frontend developer, Technical Lead</strong>,&nbsp;<a href="http://www.epo.org/" target="_blank">European Patent Office</a></p><p class="text-muted"><small><span class="space-right">Feb, 2018 - Sep, 2021</span><span><i class="icon-clock mr-5"></i>3 years 7 months</span></small></p><div class="mop-wrapper space-bottom"><p>European Patent Office (EPO) – Conducts patent examination and prior art searches for European patent applications, ensuring compliance with novelty, inventive step, and industrial applicability criteria. Specialises in technical fields such as chemistry, physics, and mechanics to support innovation across Europe.</p>
+</div><ul><li class="mop-wrapper"><p><strong>Feature Development &amp; UX Enhancement</strong> – Designed and implemented new features, ensuring seamless functionality and an intuitive user experience.</p>
+</li><li class="mop-wrapper"><p><strong>Responsive UI &amp; Localisation</strong> – Built and optimised responsive design, handling the complexities of multiple languages and countries to ensure accessibility and usability across European Union.</p>
+</li><li class="mop-wrapper"><p><strong>Performance Optimisation</strong> – Identified and resolved performance bottlenecks, improving application speed, efficiency, and overall user satisfaction.</p>
+</li><li class="mop-wrapper"><p><strong>Cross-Team Collaboration</strong> – Worked closely with product managers and backend developers to align with business goals and technical requirements. Worked as a part of scrum team.</p>
+</li><li class="mop-wrapper"><p><strong>Technical Leadership</strong> – Led and mentored a team of up to four developers, providing guidance on best practices, architecture decisions, and code quality.</p>
+</li><li class="mop-wrapper"><p><strong>Continuous Integration with Jenkins</strong> – Configured and maintained Jenkins pipelines for automated testing, building, and deployment.</p>
+</li><li class="mop-wrapper"><p><strong>Continuous Learning &amp; Mentorship</strong> – Proactively learned from senior engineers, adopting best practices, architectural principles, and advanced development techniques.</p>
+</li><li class="mop-wrapper"><p><strong>Stack</strong>: React, MobX, TypeScript, Webpack, Ramda, SCSS, Jenkins</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="https://www.softeq.com" target="_blank">Softeq</a></p><p class="text-muted"><small><span class="space-right">Jun, 2017 - Jan, 2018</span><span><i class="icon-clock mr-5"></i>8 months</span></small></p><div class="mop-wrapper space-bottom"><p>Softeq is a software development agency that delivers tailored software solutions to clients worldwide.</p>
+</div><ul><li class="mop-wrapper"><p><strong>Client-Side Application Development</strong> – Developed robust client-side applications, ensuring smooth performance and user experience across platforms.</p>
+</li><li class="mop-wrapper"><p><strong>API Integration with GraphQL</strong> – Integrated TripAdvisor API using Apollo Client, enabling efficient and flexible data querying for dynamic content.</p>
+</li><li class="mop-wrapper"><p><strong>Skype SDK Implementation</strong> – Utilised Skype SDK functionality, including share features, actions, and components, to enhance communication features within the application.</p>
+</li><li class="mop-wrapper"><p><strong>Stack</strong>: React, Babel, GraphQL, Flow, Webpack, Lodash, Less.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;<a href="https://specific-group.com/at-en/" target="_blank">Specific-Group</a></p><p class="text-muted"><small><span class="space-right">Jan, 2015 - Jun, 2017</span><span><i class="icon-clock mr-5"></i>2 years 5 months</span></small></p><div class="mop-wrapper space-bottom"><p>Specific-Group is an Austrian IT services provider founded in Vienna in 1998</p>
+</div><ul><li class="mop-wrapper"><p><strong>HTML5 Mobile &amp; Desktop SPA Development</strong> – Developed responsive Single Page Applications for banking, ensuring seamless performance across both mobile and desktop platforms.</p>
+</li><li class="mop-wrapper"><p><strong>UI Components Implementation</strong> – Built interactive UI components, including SVG charts with frequently changing data, animations (RequestAnimationFrame, CSS) to enhance user engagement.</p>
+</li><li class="mop-wrapper"><p><strong>Service Integration &amp; API Calls</strong> – Implemented service calls based on Swagger definitions, ensuring efficient data retrieval and integration with backend systems.</p>
+</li><li class="mop-wrapper"><p><strong>Stack:</strong> Webpack, Node.js, React, Flummox/Redux, ES6, Babel, TypeScript, Lodash, less.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Frontend developer</strong>,&nbsp;Topmall.ua</p><p class="text-muted"><small><span class="space-right">Jan, 2014 - Sep, 2014</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Accompanying online store</strong> - Supporting client-side technologies and existing functionality. Complete responsive, mobile-first revision.</p>
+</li><li class="mop-wrapper"><p><strong>Stack</strong>: SASS, JavaScript, AngularJS, Twig template engine, PHP, Symfony</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>HTML layout designer, Frontend developer</strong>,&nbsp;<a href="https://msocialproduction.ru/" target="_blank">M-Social</a></p><p class="text-muted"><small><span class="space-right">Jan, 2013 - Jan, 2014</span><span><i class="icon-clock mr-5"></i>1 year 1 month</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Client-side development</strong> - layout and code maintenance throughout the life of projects, interaction with the server-side written in JAVA.</p>
+</li><li class="mop-wrapper"><p><strong>Stack:</strong> HTML (Jade, HAML), CSS (SASS, LESS, Stylus, Myth, Roole), JS, JS-libraries (jQuery, underscore), frameworks (Angular, Ember), AJAX, CoffeeScript, BEM and others.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>HTML layout designer</strong>,&nbsp;Anstyle</p><p class="text-muted"><small><span class="space-right">Nov, 2011 - Jan, 2013</span><span><i class="icon-clock mr-5"></i>1 year 3 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p><strong>Responsibilities:</strong> Supporting, updating, editing cross-browser layout of sites.</p>
+</li><li class="mop-wrapper"><p><strong>Stack:</strong> HTML, CSS, JS, jQuery, jQueryUI.</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>JavaScript / TypeScript</strong><div class="space-top labels"><span class="label label-keyword"><p>React</p>
+</span><span class="label label-keyword"><p>Angular</p>
+</span><span class="label label-keyword"><p>Vue</p>
+</span><span class="label label-keyword"><p>Redux</p>
+</span><span class="label label-keyword"><p>MobX</p>
+</span><span class="label label-keyword"><p>Node.js</p>
+</span><span class="label label-keyword"><p>Webpack</p>
+</span><span class="label label-keyword"><p>vite</p>
+</span><span class="label label-keyword"><p>React Query</p>
+</span><span class="label label-keyword"><p>Lodash</p>
+</span><span class="label label-keyword"><p>ramda</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Layout</strong><div class="space-top labels"><span class="label label-keyword"><p>HTML</p>
+</span><span class="label label-keyword"><p>CSS</p>
+</span><span class="label label-keyword"><p>Tailwind CSS</p>
+</span><span class="label label-keyword"><p>Less</p>
+</span><span class="label label-keyword"><p>SASS</p>
+</span><span class="label label-keyword"><p>Stylus</p>
+</span><span class="label label-keyword"><p>HAML, Pug (Jade)</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Intermediate" data-placement="left"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong>CI/CD</strong><div class="space-top labels"><span class="label label-keyword"><p>GitLab CI/CD</p>
+</span><span class="label label-keyword"><p>Jenkins</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left"><div class="skill-progress beginner"></div></div><div class="skill-info"><strong>Misc</strong><div class="space-top labels"><span class="label label-keyword"><p>PostgreSQL</p>
+</span><span class="label label-keyword"><p>MongoDB</p>
+</span><span class="label label-keyword"><p>GraphQL</p>
+</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Engineering and Ecology, Master,&nbsp;</strong>Kyiv National University of Construction and Architecture</p><p class="text-muted clear-margin"><small>Jun, 2007 - Jun, 2002</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Management, Master,&nbsp;</strong>Kyiv National University of Construction and Architecture</p><p class="text-muted clear-margin"><small>Jun, 2008 - Jun, 2005</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Everything</strong></p><div class="space-top labels"><span class="label label-keyword">Music</span><span class="label label-keyword">Sound Recording</span><span class="label label-keyword">Guitar</span><span class="label label-keyword">Languages</span><span class="label label-keyword">Travelling</span><span class="label label-keyword">Reading</span></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
   var toggleFloatingMenu = function() {
     $( '.js-floating-nav' ).toggleClass( 'is-visible' );
     $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
