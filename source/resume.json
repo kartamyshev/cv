@@ -1,0 +1,225 @@
+{
+  "basics": {
+    "name": "Kostiantyn Kartamyshev",
+    "label": "Javascript Developer",
+    "picture": "assets/picture.jpeg",
+    "email": "kartamyshev.k@gmail.com",
+    "phone": "+31 63 932 77 24",
+    "website": "http://kartamyshev.github.io/blog",
+    "summary": "Senior JavaScript Engineer with 13 years of experience in web development. Born and raised in Ukraine, reside in The Netherlands since 2018, now hold Dutch citizenship.\n\n My main strength lies in Frontend development with focus on TypeScript and React, but I have experience with other frameworks and libraries (Angular, Vue, web components etc), Python and Node.js. Dedicated and passionate about building high-quality, scalable, and maintainable applications for the business having customer problem in mind. I thrive in a challenging fast paced environment where I can enhance my skills further. Highly collaborative, I get energized from working as a part of a scrum team and by coaching less senior team members.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Alphen aan den Rijn",
+      "countryCode": "NL",
+      "region": "Netherlands"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "kartamyshev",
+        "url": "https://github.com/kartamyshev"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "konstantin kartamyshev",
+        "url": "https://www.linkedin.com/in/konstantin-kartamyshev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "EclecticIQ",
+      "position": "Senior Frontend developer",
+      "url": "https://eclecticiq.com/",
+      "startDate": "2021-10-01",
+      "summary": "EclecticIQ is a global cybersecurity company providing an advanced AI-embedded Threat Intelligence Platform that helps organizations detect, analyze, and respond to critical cyber threats.",
+      "highlights": [
+        "**Modernization & Migration** – Led the migration of a large-scale React codebase to newer versions, improving performance and maintainability. Also led transition from JavaScript to TypeScript.",
+        "**Codebase Refactoring & Legacy Maintenance** – Systematically refactored and rewrote legacy code, implementing architectural patterns to simplify maintenance and improve scalability.",
+        "**Testing & CI/CD Enhancements** – Decoupled end-to-end Cypress tests from the UI repository. Contributed to backend codebase (Python) and CI/CD pipelines (GitLab).",
+        "**Design System Implementation** – Developed and maintained a design system used across multiple projects, ensuring UI consistency, reusability, and efficient collaboration between design and engineering teams.",
+        "**AI & User Experience Improvements** – Integrated Large Language Models (OpenAI, Ollama, Perplexity) to enhance user experience, leveraging AI-driven features to improve interactivity and usability.",
+        "**Cross-Functional Collaboration & Maintenance** – Regularly engaged in face-to-face communication with product managers, backend engineers and designers. Worked as a part of scrum team. Ensured the frontend ecosystem remained up to date by managing dependencies and keeping node modules up-to-date.",
+        "**Stack**: React, TypeScript, Next.js, vite, less, Tailwind CSS, React Query, Redux, react-hook-form, Lodash, GitLab CI/CD."
+      ]
+    },
+    {
+      "name": "European Patent Office",
+      "position": "Senior Frontend developer, Technical Lead",
+      "url": "http://www.epo.org/",
+      "startDate": "2018-02-12",
+      "endDate": "2021-09-30",
+      "summary": "European Patent Office (EPO) – Conducts patent examination and prior art searches for European patent applications, ensuring compliance with novelty, inventive step, and industrial applicability criteria. Specialises in technical fields such as chemistry, physics, and mechanics to support innovation across Europe.",
+      "highlights": [
+        "**Feature Development & UX Enhancement** – Designed and implemented new features, ensuring seamless functionality and an intuitive user experience.",
+        "**Responsive UI & Localisation** – Built and optimised responsive design, handling the complexities of multiple languages and countries to ensure accessibility and usability across European Union.",
+        "**Performance Optimisation** – Identified and resolved performance bottlenecks, improving application speed, efficiency, and overall user satisfaction.",
+        "**Cross-Team Collaboration** – Worked closely with product managers and backend developers to align with business goals and technical requirements. Worked as a part of scrum team.",
+        "**Technical Leadership** – Led and mentored a team of up to four developers, providing guidance on best practices, architecture decisions, and code quality.",
+        "**Continuous Integration with Jenkins** – Configured and maintained Jenkins pipelines for automated testing, building, and deployment.",
+        "**Continuous Learning & Mentorship** – Proactively learned from senior engineers, adopting best practices, architectural principles, and advanced development techniques.",
+        "**Stack**: React, MobX, TypeScript, Webpack, Ramda, SCSS, Jenkins"
+      ]
+    },
+    {
+      "name": "Softeq",
+      "position": "Frontend developer",
+      "url": "https://www.softeq.com",
+      "startDate": "2017-06-01",
+      "endDate": "2018-01-31",
+      "summary": "Softeq is a software development agency that delivers tailored software solutions to clients worldwide.",
+      "highlights": [
+        "**Client-Side Application Development** – Developed robust client-side applications, ensuring smooth performance and user experience across platforms.",
+        "**API Integration with GraphQL** – Integrated TripAdvisor API using Apollo Client, enabling efficient and flexible data querying for dynamic content.",
+        "**Skype SDK Implementation** – Utilised Skype SDK functionality, including share features, actions, and components, to enhance communication features within the application.",
+        "**Stack**: React, Babel, GraphQL, Flow, Webpack, Lodash, Less."
+      ]
+    },
+    {
+      "name": "Specific-Group",
+      "position": "Frontend developer",
+      "url": "https://specific-group.com/at-en/",
+      "startDate": "2015-01-18",
+      "endDate": "2017-06-23",
+      "summary": "Specific-Group is an Austrian IT services provider founded in Vienna in 1998",
+      "highlights": [
+        "**HTML5 Mobile & Desktop SPA Development** – Developed responsive Single Page Applications for banking, ensuring seamless performance across both mobile and desktop platforms.",
+        "**UI Components Implementation** – Built interactive UI components, including SVG charts with frequently changing data, animations (RequestAnimationFrame, CSS) to enhance user engagement.",
+        "**Service Integration & API Calls** – Implemented service calls based on Swagger definitions, ensuring efficient data retrieval and integration with backend systems.",
+        "**Stack:** Webpack, Node.js, React, Flummox/Redux, ES6, Babel, TypeScript, Lodash, less."
+      ]
+    },
+    {
+      "name": "Topmall.ua",
+      "position": "Frontend developer",
+      "startDate": "2014-01-01",
+      "endDate": "2014-09-30",
+      "highlights": [
+        "**Accompanying online store** - Supporting client-side technologies and existing functionality. Complete responsive, mobile-first revision.",
+        "**Stack**: SASS, JavaScript, AngularJS, Twig template engine, PHP, Symfony"
+      ]
+    },
+    {
+      "name": "M-Social",
+      "position": "HTML layout designer, Frontend developer",
+      "url": "https://msocialproduction.ru/",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-31",
+      "highlights": [
+        "**Client-side development** - layout and code maintenance throughout the life of projects, interaction with the server-side written in JAVA.",
+        "**Stack:** HTML (Jade, HAML), CSS (SASS, LESS, Stylus, Myth, Roole), JS, JS-libraries (jQuery, underscore), frameworks (Angular, Ember), AJAX, CoffeeScript, BEM and others."
+      ]
+    },
+    {
+      "name": "Anstyle",
+      "position": "HTML layout designer",
+      "startDate": "2011-11-01",
+      "endDate": "2013-01-31",
+      "highlights": [
+        "**Responsibilities:** Supporting, updating, editing cross-browser layout of sites.",
+        "**Stack:** HTML, CSS, JS, jQuery, jQueryUI."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kyiv National University of Construction and Architecture",
+      "area": "Engineering and Ecology",
+      "studyType": "Master",
+      "startDate": "2007-06-01",
+      "endDate": "2002-06-01"
+    },
+    {
+      "institution": "Kyiv National University of Construction and Architecture",
+      "area": "Management",
+      "studyType": "Master",
+      "startDate": "2008-06-01",
+      "endDate": "2005-06-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript / TypeScript",
+      "level": "advanced",
+      "keywords": [
+        "React", 
+        "Angular", 
+        "Vue", 
+        "Redux", 
+        "MobX", 
+        "Node.js",
+        "Webpack", 
+        "vite", 
+        "React Query", 
+        "Lodash", 
+        "ramda"
+      ]
+    },
+    {
+      "name": "Layout",
+      "level": "advanced",
+      "keywords": [
+        "HTML", 
+        "CSS", 
+        "Tailwind CSS",
+        "Less", 
+        "SASS", 
+        "Stylus",
+        "HAML, Pug (Jade)"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "intermediate",
+      "keywords": [
+        "GitLab CI/CD", 
+        "Jenkins"
+      ]
+    },
+    {
+      "name": "Misc",
+      "level": "beginner",
+      "keywords": [
+        "PostgreSQL",
+        "MongoDB",
+        "GraphQL"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Professional working proficiency"
+    },
+    {
+      "language": "Ukrainian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Everything",
+      "keywords": [
+        "Music",
+        "Sound Recording",
+        "Guitar",
+        "Languages",
+        "Travelling",
+        "Reading"
+      ]
+    }
+  ]
+}
