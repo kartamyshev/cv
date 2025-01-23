@@ -6,9 +6,7 @@
   "scripts": {
     "serve": "static --port 8082",
     "export": "resume export index.html --theme elegant",
-    "create-pdf": "node create-pdf.js",
-    "copy-to-public": "cp -r ./assets/* ../assets/ && cp ./index.html ../",
-    "prepare": "npm run export && npm run create-pdf && npm run copy-to-public"
+    "prepare": "npm run export && ./prepare.sh"
   },
   "keywords": [],
   "author": "",
