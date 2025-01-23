@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "static --port 8082",
     "export": "resume export index.html --theme elegant",
-    "serve": "static --port 8082"
+    "create-pdf": "node create-pdf.js",
+    "copy-assets": "cp -r ./assets/* ../assets/",
+    "prepare": "npm run export && npm run create-pdf && npm run copy-assets"
   },
   "keywords": [],
   "author": "",
