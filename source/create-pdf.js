@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const inputFilePath = path.join(__dirname, 'Kartamyshev Kostiantyn.pages');
 const outputDir = path.join(__dirname, 'assets');
-const outputFileName = 'Kartamyshev-Kostiantyn-Frontend-Developer-CV-2.pdf';
+const outputFileName = 'Kartamyshev-Kostiantyn-Frontend-Developer-CV.pdf';
 const libreOfficePath = '/opt/homebrew/bin/soffice';
 
 const command = `${libreOfficePath} --headless --convert-to pdf "${inputFilePath}" --outdir "${outputDir}"`;
