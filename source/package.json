@@ -1,12 +1,13 @@
 {
   "name": "json-resume",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "serve": "static --port 8082",
     "export": "resume export index.html --theme elegant",
-    "prepare": "npm run export && ./prepare.sh"
+    "prepare": "npm run export && ./scripts/prepare.sh",
+    "publish": "./scripts/publish.sh"
   },
   "keywords": [],
   "author": "",
