@@ -6,8 +6,7 @@
   "scripts": {
     "serve": "static --port 8082",
     "export": "resume export index.html --theme elegant",
-    "prepare": "npm run export && ./scripts/prepare.sh",
-    "publish": "./scripts/publish.sh"
+    "prepare": "npm run export && ./scripts/prepare.sh"
   },
   "keywords": [],
   "author": "",
