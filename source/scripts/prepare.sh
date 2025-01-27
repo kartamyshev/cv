@@ -15,6 +15,6 @@ if [ "$1" == '-p' ]; then
     # echo "[$version] - $commit_message"
 
     git add -A
-    git commit -m "$commit_message"
+    git commit -m "[$version] - $commit_message"
     git push origin master
 fi

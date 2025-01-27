@@ -1,10 +1,10 @@
 {
   "name": "json-resume",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "static --port 8082",
+    "serve": "resume serve --port 8082 --theme elegant",
     "export": "resume export index.html --theme elegant",
     "prepare": "npm run export && ./scripts/prepare.sh"
   },
@@ -13,7 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "jsonresume-theme-elegant": "^1.10.2",
-    "node-static": "^0.7.9",
     "resume-cli": "^3.1.2"
   }
 }
