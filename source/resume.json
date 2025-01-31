@@ -27,6 +27,7 @@
       },
       {
         "network": "Book",
+        "custom": true,
         "url": "./assets/Kartamyshev-Kostiantyn-Javascript-Developer-CV.pdf"
       }
     ]
@@ -194,23 +195,23 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "C1 - Advanced"
     },
     {
       "language": "Dutch",
-      "fluency": "Limited working proficiency"
+      "fluency": "B1 - Intermediate"
     },
     {
       "language": "Spanish",
-      "fluency": "Professional working proficiency"
+      "fluency": " B2 - Upper Intermediate"
     },
     {
       "language": "Ukrainian",
-      "fluency": "Native speaker"
+      "fluency": "C2 - Mastery"
     },
     {
       "language": "Russian",
-      "fluency": "Fluent"
+      "fluency": "C1 - Advanced"
     }
   ],
   "interests": [

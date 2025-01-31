@@ -1,6 +1,6 @@
 {
   "name": "json-resume",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "handlebars": "^4.7.8",
     "jsonresume-theme-elegant": "^1.10.2",
+    "jsonresume-theme-kartamyshev": "file:./jsonresume-theme-kartamyshev",
     "resume-cli": "^3.1.2"
   }
 }
