@@ -4,12 +4,23 @@ const fs = require('fs');
 
 const inputFilePath = path.join(__dirname, 'Kartamyshev Kostiantyn.pages');
 const outputDir = path.join(__dirname, 'assets');
-const outputFileName = 'Kartamyshev-Kostiantyn-Javascript-Developer-CV.pdf';
 const libreOfficePath = '/opt/homebrew/bin/soffice';
 
-const command = `${libreOfficePath} --headless --convert-to pdf "${inputFilePath}" --outdir "${outputDir}"`;
+const adjustFileName = () => {
+  const outputFileName = 'Kartamyshev-Kostiantyn-Javascript-Developer-CV.pdf';
+  const oldPath = path.join(outputDir, 'Kartamyshev Kostiantyn.pdf');
+  const newPath = path.join(outputDir, outputFileName);
 
-exec(command, (error, stdout, stderr) => {
+  fs.rename(oldPath, newPath, (err) => {
+    if (err) {
+      console.error(`Error renaming file: ${err.message}`);
+      return;
+    }
+    console.log('PDF CV file generated successfully.');
+  });
+};
+
+exec(`${libreOfficePath} --headless --convert-to pdf "${inputFilePath}" --outdir "${outputDir}"`, (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error.message}`);
     return;
@@ -20,16 +31,5 @@ exec(command, (error, stdout, stderr) => {
   }
   console.log(`Stdout: ${stdout}`);
 
-  // Rename the output file
-  const generatedPdfPath = path.join(outputDir, 'Kartamyshev Kostiantyn.pdf');
-  const newPdfPath = path.join(outputDir, outputFileName);
-
-  fs.rename(generatedPdfPath, newPdfPath, (err) => {
-    if (err) {
-      console.error(`Error renaming file: ${err.message}`);
-      return;
-    }
-    console.log('PDF CV file generated successfully.');
-  });
-
+  adjustFileName();
 });

@@ -7,9 +7,8 @@ const markdown = require('markdown-it')({
     breaks: true 
 }).use(require('markdown-it-abbr'));
 
-const htmlFilePath = path.join(__dirname, 'index.html');
-const htmlTemplate = fs.readFileSync(htmlFilePath, 'utf-8');
-const template = Handlebars.compile(htmlTemplate);
+const templatePath = path.join(__dirname, 'index.hbs');
+const template = fs.readFileSync(templatePath, 'utf-8');
 
 function render(resume) {
     const addressAttrs = ['address', 'city', 'region', 'countryCode', 'postalCode'];
@@ -32,7 +31,7 @@ function render(resume) {
         .map(convertMarkdown)
     });
 
-    return template({ ...resume, css });
+    return Handlebars.compile(template)({ ...resume, css })
 }
 
 function convertMarkdown(str) {

@@ -1,10 +1,11 @@
 {
   "name": "json-resume",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "serve": "resume serve --port 8082 --theme elegant",
+    "serve:kartamyshev": "resume serve --port 8082 --theme kartamyshev",
     "export": "resume export index.html --theme elegant",
     "prepare": "npm run export && ./scripts/prepare.sh"
   },
