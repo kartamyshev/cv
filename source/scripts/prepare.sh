@@ -1,6 +1,6 @@
 #!/bin/bash
 
-node create-pdf.js
+# node create-pdf.js
 cp -r ./assets/* ../assets/ && cp ./index.html ../
 
 if [ -n "$npm_config_argv" ]; then

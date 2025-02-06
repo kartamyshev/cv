@@ -1,6 +1,6 @@
 {
-  "name": "json-resume",
-  "version": "4.0.0",
+  "name": "kartamyshev-js-developer-cv",
+  "version": "4.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
