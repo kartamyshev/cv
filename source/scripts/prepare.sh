@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# node create-pdf.js
+if [ "$3" == '--update-pdf' ]; then
+    node create-pdf.js
+fi
+
 cp -r ./assets/* ../assets/ && cp ./index.html ../
 
 if [ -n "$npm_config_argv" ]; then

@@ -160,7 +160,7 @@
   "skills": [
     {
       "name": "JavaScript / TypeScript",
-      "level": "advanced",
+      "level": "Advanced",
       "keywords": [
         "React", 
         "Angular", 
@@ -177,7 +177,7 @@
     },
     {
       "name": "Layout",
-      "level": "advanced",
+      "level": "Advanced",
       "keywords": [
         "HTML", 
         "CSS", 
@@ -190,7 +190,7 @@
     },
     {
       "name": "CI/CD",
-      "level": "intermediate",
+      "level": "Intermediate",
       "keywords": [
         "GitLab CI/CD", 
         "Jenkins"
@@ -198,7 +198,7 @@
     },
     {
       "name": "Misc",
-      "level": "beginner",
+      "level": "Beginner",
       "keywords": [
         "PostgreSQL",
         "MongoDB",
