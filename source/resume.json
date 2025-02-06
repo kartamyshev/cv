@@ -32,7 +32,6 @@
       },
       {
         "network": "Book",
-        "custom": true,
         "url": "./assets/Kartamyshev-Kostiantyn-Javascript-Developer-CV.pdf"
       }
     ]

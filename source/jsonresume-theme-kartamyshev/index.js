@@ -43,11 +43,12 @@ function render(resume) {
     resume.basics.summary = convertMarkdown(resume.basics.summary);
     resume.basics.computed_location = _.compact(addressValues).join(', ');
 
-    _(resume.basics.profiles).forEach(p => {
-        const label = p.network.toLowerCase();
+    _(resume.basics.profiles).forEach(profile => {
+        const label = profile.network.toLowerCase();
 
-        p.url = utils.getUrlForProfile(resume, label);
-        p.label = label;
+        profile.url = utils.getUrlForProfile(resume, label);
+        profile.title = profile.url.endsWith('.pdf') ? 'Download .pdf file' : `${resume.basics.name} on ${profile.network}`;
+        profile.label = label;
     });
 
     _(resume.work).forEach(work_info => {

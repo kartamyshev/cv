@@ -36,7 +36,9 @@
             <i class="icon fs-lg icon-language"></i>
         </span>
         {{#each languages}}
-        <span class="info" data-toggle="tooltip" title="{{this.fluency}}">{{this.language}},&nbsp;</span>
+        <span class="info" data-toggle="tooltip" title="{{this.fluency}}">
+            {{this.language}}{{#unless @last}},&nbsp;{{/unless}}
+        </span>
         {{/each}}
     </div>
 </div>
