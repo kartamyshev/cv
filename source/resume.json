@@ -26,6 +26,11 @@
         "url": "https://www.linkedin.com/in/konstantin-kartamyshev"
       },
       {
+        "network": "Spotify",
+        "username": "konstantin kartamyshev",
+        "url": "https://open.spotify.com/user/kartamyshev.k"
+      },
+      {
         "network": "Book",
         "custom": true,
         "url": "./assets/Kartamyshev-Kostiantyn-Javascript-Developer-CV.pdf"

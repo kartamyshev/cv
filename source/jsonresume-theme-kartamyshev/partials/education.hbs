@@ -1,0 +1,36 @@
+<div class="detail" id="education">
+    <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
+    <div class="info">
+        <h4 class="title text-uppercase">Education</h4>
+        <div class="content">
+            <ul class="list-unstyled clear-margin">
+                {{#each education}}
+                <li class="card card-nested">
+                    <div class="content">
+                        <p class="clear-margin relative">
+                            <strong>
+                                {{this.area}}, {{this.studyType}},
+                            </strong>
+                            {{this.institution}}
+                        </p>
+                        <p class="text-muted">
+                            <small>
+                                {{ this.startDate}} - {{ this.endDate }}
+                            </small>
+                        </p>
+                        <div class="space-top labels">
+                            {{#each this.courses}}
+                            <span class="label label-keyword">
+                                <a target="_blank" href="{{this.href}}">
+                                    {{this.title}}
+                                </a>
+                            </span>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

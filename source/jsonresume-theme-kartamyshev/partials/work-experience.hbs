@@ -1,0 +1,60 @@
+<div class="detail" id="work-experience">
+    <div class="icon">
+        <i class="fs-lg icon-office"></i>
+        <span class="mobile-title">Work Experience</span>
+    </div>
+    <div class="info">
+        <h4 class="title text-uppercase">
+            Work Experience
+        </h4>
+        <ul class="list-unstyled clear-margin">
+            {{#each work}}
+            <li class="card card-nested clearfix">
+                <div class="content">
+                    <p class="clear-margin relative">
+                        {{#if this.endDate}}
+                        {{else}}
+                        <i class="icon-circle current-event" rel="tooltip" title="Currently Working"
+                            data-placement="left"></i>
+                        {{/if}}
+
+                        <strong>{{this.position}}</strong>,
+                        {{#if this.url}}
+                        <a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
+                        {{else}}
+                        {{this.name}}
+                        {{/if}}
+                    </p>
+                    <p class="text-muted">
+                        <small>
+                            <span class="space-right">
+                                {{ this.startDate }} -
+                                {{#if this.endDate}}
+                                {{ this.endDate }}
+                                {{else}}
+                                Present
+                                {{/if}}
+
+                            </span>
+                            {{#if this.duration }}
+                            <span>
+                                <i class="icon-clock mr-5"></i>
+                                {{ this.duration }}
+                            </span>
+                            {{/if}}
+                        </small>
+                    </p>
+                    <div class="mop-wrapper space-bottom">{{{this.summary}}}</div>
+                    <ul>
+                        {{#each this.highlights}}
+                        <li class="mop-wrapper">
+                            {{{ this }}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TODO: rename to handlebars (?) -->
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,17 +20,7 @@
                 <span class="close-icon">&times;</span>
             </a>
             
-            <nav class="floating-nav js-floating-nav">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#about">
-                            <i class="mr-10 icon-board"></i>
-                            About
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
+            {{>floating-nav}}
 
             <section class="col-md-3 card-wrapper profile-card-wrapper affix">
                 <div class="card profile-card">
@@ -43,79 +33,10 @@
                             <h5 class="text-muted" itemprop="jobTitle">{{ basics.label }}</h5>
                         </div>
                     </span>
-                    
                     <hr>
-
-                    <div class="contact-details clearfix">
-                        <div class="detail">
-                            <span class="icon">
-                                <i class="icon fs-lg icon-location"></i>
-                            </span>
-                            <span class="info">{{basics.computed_location}}</span>
-                        </div>
-    
-                        <div class="detail">
-                            <span class="icon">
-                                <i class="icon fs-lg icon-phone"></i>
-                            </span>
-                            <span class="info" itemprop="telephone">{{basics.phone}}</span>
-                        </div>
-    
-                        <div class="detail">
-                            <span class="icon">
-                                <i class="icon fs-lg icon-mail"></i>
-                            </span>
-                            <span class="info">
-                                <a class="link-disguise" href="mailto:{{basics.email}}" itemprop="email">{{basics.email}}</a>
-                            </span>
-                        </div>
-    
-                        <div class="detail">
-                            <span class="icon">
-                                <i class="icon fs-lg icon-link"></i>
-                            </span>
-                            <span class="info">
-                                <a href="{{basics.website}}" target="_blank">{{basics.website}}</a>
-                            </span>
-                        </div>
-    
-                        <div class="detail">
-                            <span class="icon" title="Languages I speak">
-                                <i class="icon fs-lg icon-language"></i>
-                            </span>
-                            {{#each languages}}
-                            <span class="info" data-toggle="tooltip" title="{{this.fluency}}">{{this.language}},&nbsp;</span>
-                            {{/each}}
-                        </div>
-                    </div>
-
+                    {{>contact-details}}
                     <hr>
-
-                    <div class="social-links text-center">
-                        <div>
-                            {{#each basics.profiles}}
-                            {{#if this.custom }}
-                            <a 
-                                class="fs-2x social-link link-{{this.label}} icon-{{this.label}}" 
-                                href="{{ this.url }}" 
-                                target="_blank" 
-                                data-toggle="tooltip" 
-                                title="Download .pdf file">
-                            </a>
-                            {{else}}
-                            <a 
-                                class="fs-2x social-link link-{{this.label}} icon-{{this.label}}" 
-                                href="{{ this.url }}" 
-                                target="_blank" 
-                                data-toggle="tooltip" 
-                                title="Kostiantyn Kartamyshev on {{this.network}}">
-                            </a>
-                            {{/if}}
-                            {{/each}}
-                        </div>
-                    </div>
-
-
+                    {{>social-links}}
                 </div>
             </section>
 
@@ -124,133 +45,18 @@
                     <h4 class="text-uppercase">Background</h4>
                     <hr/>
                     <div class="background-details">
-
-                        <div class="detail" id="about">
-                            <div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div>
-                            <div class="info">
-                                <h4 class="title text-uppercase">About</h4>
-                                <div class="card card-nested">
-                                    <div class="content mop-wrapper" itemprop="description">{{{ basics.summary }}}</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail" id="work-experience">
-                            <div class="icon">
-                                <i class="fs-lg icon-office"></i>
-                                <span class="mobile-title">Work Experience</span>
-                            </div>
-                            <div class="info">
-                                <h4 class="title text-uppercase">
-                                    Work Experience
-                                </h4>
-                                <ul class="list-unstyled clear-margin">
-                                    {{#each work}}
-                                    <li class="card card-nested clearfix">
-                                        <div class="content">
-                                            <p class="clear-margin relative">
-                                                {{#if this.endDate}}
-                                                {{else}}
-                                                <i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i>
-                                                {{/if}}
-
-                                                <strong>{{this.position}}</strong>,&nbsp;
-                                                {{#if this.url}}
-                                                <a href="{{ this.url }}" target="_blank">{{ this.name }}</a>
-                                                {{else}}
-                                                {{this.name}}
-                                                {{/if}}
-                                            </p>
-                                            <p class="text-muted">
-                                                <small>
-                                                    <span class="space-right">
-                                                        {{ this.startDate }} - 
-                                                        
-                                                        {{#if this.endDate}}
-                                                        {{ this.endDate }}
-                                                        {{else}}
-                                                        Present
-                                                        {{/if}}
-                                                        
-                                                    </span>
-                                                    {{#if this.duration }}
-                                                    <span>
-                                                        <i class="icon-clock mr-5">{{ this.duration }}</i>
-                                                    </span>
-                                                    {{/if}}
-                                                </small>
-                                            </p>
-                                            <div class="mop-wrapper space-bottom">{{this.summary}}</div>
-                                            <ul>
-                                                {{#each this.highlights}}
-                                                <li class="mop-wrapper">
-                                                    {{{ this }}}
-                                                </li>
-                                                {{/each}}
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="detail" id="projects-experience">
-                            <div class="icon"><i class="fs-lg icon-code"></i><span class="mobile-title">Projects Experience</span></div>
-                        </div>
-                        
+                        {{>about}}
+                        {{>work-experience}}
+                        {{>skills}}
+                        {{>education}}
+                        {{>interests}}
                     </div>
                 </div>
             </section>
             
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            var toggleFloatingMenu = function() {
-                $('.js-floating-nav').toggleClass('is-visible');
-                $('.js-floating-nav-trigger').toggleClass('is-open');
-            };
-    
-            $(".background-card").css("min-height", window.screen.availHeight + "px");
-            $("[data-toggle=tooltip]").tooltip();
-            $('.js-floating-nav-trigger').on('click', function(e) {
-                e.preventDefault();
-                toggleFloatingMenu();
-            });
-            $('.js-floating-nav a').on('click', toggleFloatingMenu);
-    
-            $("#remaining-profiles").on('show.bs.collapse', function() {
-                $('.js-profiles-collapse > i')
-                    .removeClass('icon-chevron-down')
-                    .addClass('icon-chevron-up');
-            });
-    
-            $("#remaining-profiles").on('hidden.bs.collapse', function() {
-                $('.js-profiles-collapse > i')
-                    .removeClass('icon-chevron-up')
-                    .addClass('icon-chevron-down');
-            });
-        });
-    </script>
-    <script>
-        WebFontConfig = {
-            google: {
-                families: ['Lato:300,400,700:latin']
-            }
-        };
-        (function() {
-            var wf = document.createElement('script');
-            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
+    {{>scripts}}
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+<div class="social-links text-center">
+    <div>
+        {{#each basics.profiles}}
+        {{#if this.custom }}
+        <a class="fs-2x social-link link-{{this.label}} icon-{{this.label}}" href="{{ this.url }}" target="_blank"
+            data-toggle="tooltip" title="Download .pdf file">
+        </a>
+        {{else}}
+        <a class="fs-2x social-link link-{{this.label}} icon-{{this.label}}" href="{{ this.url }}" target="_blank"
+            data-toggle="tooltip" title="Kostiantyn Kartamyshev on {{this.network}}">
+        </a>
+        {{/if}}
+        {{/each}}
+    </div>
+</div>

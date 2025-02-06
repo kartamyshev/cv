@@ -1,0 +1,26 @@
+<div class="detail" id="skills">
+    <div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div>
+    <div class="info">
+        <h4 class="title text-uppercase">Skills</h4>
+        <div class="content">
+            <ul class="list-unstyled clear-margin">
+                {{#each skills}}
+                <li class="card card-nested card-skills">
+                    <div class="skill-level" data-toggle="tooltip" title="{{this.level}}" data-placement="left">
+                        <div class="skill-progress {{this.skill_class}}"></div>
+                    </div>
+
+                    <div class="skill-info">
+                        <strong>{{this.name}}</strong>
+                        <div class="space-top labels">
+                            {{#each this.keywords}}
+                            <span class="label label-keyword">{{{this}}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

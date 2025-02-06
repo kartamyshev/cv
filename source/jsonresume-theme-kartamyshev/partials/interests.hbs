@@ -1,0 +1,20 @@
+<div class="detail" id="interests">
+    <div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div>
+    <div class="info">
+        <h4 class="title text-uppercase">Interests</h4>
+        <div class="content">
+            <ul class="list-unstyled clear-margin">
+                {{#each interests}}
+                <li class="card card-nested">
+                    <p><strong>{{this.name}}</strong></p>
+                    <div class="space-top labels">
+                        {{#each this.keywords}}
+                        <span class="label label-keyword">{{this}}</span>
+                        {{/each}}
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -464,8 +464,8 @@ body {
   color: #5ACE24;
   position: absolute;
   right: 100%;
-  top: 4px;
-  left: -10px;
+  top: 7px;
+  left: -11px;
 }
 .mop-wrapper > p:last-child {
   margin: 0;
@@ -999,13 +999,4 @@ body {
   .pagebreak {
     page-break-before: always;
   }
-}
-
-.icon-file-pdf {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
