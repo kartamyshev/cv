@@ -9,13 +9,21 @@
                     <div class="content">
                         <p class="clear-margin relative">
                             <strong>
-                                {{this.area}}, {{this.studyType}},
+                                {{this.area}},
+                                {{#if this.studyType}}
+                                {{this.studyType}},
+                                {{/if}}
                             </strong>
                             {{this.institution}}
                         </p>
                         <p class="text-muted">
                             <small>
-                                {{ this.startDate}} - {{ this.endDate }}
+                                {{#if this.startDate}}
+                                {{ this.startDate}} - 
+                                {{/if}}
+                                {{#if this.endDate}}
+                                {{ this.endDate }}
+                                {{/if}}
                             </small>
                         </p>
                         <div class="space-top labels">

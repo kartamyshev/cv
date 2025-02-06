@@ -145,6 +145,16 @@
       "studyType": "Master",
       "startDate": "2008-06-01",
       "endDate": "2005-06-01"
+    },
+    {
+      "institution": "Udemy",
+      "area": "Software Development",
+      "url": "http://udemy.com/",
+      "courses": [
+        { "title": "Advanced Javascript", "href": "https://www.udemy.com/share/1028HW3@Q04mEfLr0qiyqbktDkDk0ku3H-Y3wcw6onbMk02ZY0qxyTuhWiBuqQy4hrkXzXu7/" },
+        { "title": "Data Structures in Javascript", "href": "https://www.udemy.com/share/102d2y3@mRfCy_gKom_K1F-mub-8ft8cbV9kFu4ilPX6CCQpq3cx7nma-v2Vsr8c4W3J6As0/"},
+        { "title": "Algorithms in Javascript", "href": "https://www.udemy.com/share/101HDM3@6B4RwC_ly9bFO9pe6yZpSa-k88cEUpoBykeGxLGS9_diRcDwlDUU55G_VvttwDmI/"}
+      ]
     }
   ],
   "skills": [
