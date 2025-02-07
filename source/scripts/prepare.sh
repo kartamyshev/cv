@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ "$3" == '--update-pdf' ]; then
+SOURCE_CV_FILE="Kartamyshev Kostiantyn.pages"
+
+if git diff --name-only | grep "$SOURCE_CV_FILE"; then
     node create-pdf.js
 fi
 
@@ -19,8 +21,6 @@ if [ "$1" == '-p' ]; then
     fi
     version=$(node -p "require('./package.json').version")
     commit_message="$2"
-
-    echo "[$version] - $commit_message"
 
     git add -A
     git commit -m "[$version] - $commit_message"
