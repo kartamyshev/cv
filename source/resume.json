@@ -172,7 +172,7 @@
         "vite", 
         "React Query", 
         "Lodash", 
-        "ramda"
+        "Ramda"
       ]
     },
     {
@@ -202,7 +202,8 @@
       "keywords": [
         "PostgreSQL",
         "MongoDB",
-        "GraphQL"
+        "GraphQL",
+        "Next.js"
       ]
     }
   ],
