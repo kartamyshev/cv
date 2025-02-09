@@ -4,35 +4,28 @@ const _ = require('underscore');
 const Handlebars = require('handlebars');
 const utils = require('jsonresume-themeutils');
 const moment = require('moment');
-const markdown = require('markdown-it')({ 
-    breaks: true 
+const markdown = require('markdown-it')({
+    breaks: true
 }).use(require('markdown-it-abbr'));
 
 const templatePath = path.join(__dirname, 'index.hbs');
 const template = fs.readFileSync(templatePath, 'utf-8');
-const subTemplates = [
-    'about', 
-    'work-experience', 
-    'skills', 
-    'education', 
-    'interests', 
-    'contact-details',
-    'social-links',
-    'floating-nav',
-    'scripts',
-];
 
 require('./moment-precise-range.js');
 utils.setConfig({ date_format: 'MMM, YYYY' });
 
-const registerSubTemplate = (name) => {
+const partials = fs
+    .readdirSync(path.join(__dirname, 'partials'))
+    .map(partial => _.first(partial.split('.')));
+
+const registerPartial = (name) => {
     Handlebars.registerPartial(
         name,
         fs.readFileSync(path.join(path.join(__dirname, 'partials'), `${name}.hbs`), 'utf-8')
     );
 };
 
-subTemplates.forEach(registerSubTemplate);
+partials.forEach(registerPartial);
 
 const generateProfilePicture = (picture) => {
     const picturePath = path.join(__dirname, picture);
@@ -46,7 +39,7 @@ function render(resume) {
     const addressAttrs = ['address', 'city', 'region', 'countryCode', 'postalCode'];
     const addressValues = addressAttrs.map(key => resume.basics.location[key]);
     const css = fs.readFileSync(__dirname + '/assets/css/theme.css', 'utf-8');
-    
+
     resume.basics.picture = generateProfilePicture(resume.basics.picture);
     resume.basics.summary = convertMarkdown(resume.basics.summary);
     resume.basics.computed_location = _.compact(addressValues).join(', ');
@@ -66,8 +59,8 @@ function render(resume) {
 
         if (can_calculate_period) {
             work_info.duration = work_info.endDate != null && end_date.isValid()
-            ? moment.preciseDiff(start_date, end_date)
-            : moment.preciseDiff(start_date, moment());
+                ? moment.preciseDiff(start_date, end_date)
+                : moment.preciseDiff(start_date, moment());
         }
 
         if (start_date.isValid()) {
