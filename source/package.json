@@ -1,11 +1,11 @@
 {
   "name": "kartamyshev-js-developer-cv",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "./scripts/serve.sh",
-    "export": "./scripts/export.sh",
+    "serve": "resume serve --port 8082 --theme kartamyshev",
+    "export": "resume export index.html --theme kartamyshev",
     "prepare": "npm run export && ./scripts/prepare.sh"
   },
   "keywords": [],
