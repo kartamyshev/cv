@@ -35,12 +35,11 @@ const generateProfilePicture = (picture) => {
     return `data:image/png;base64, ${pictureBase64}`;
 };
 
-const careerLength = () => {
+const yearsOfExperience = () => {
     const currentYear = new Date().getFullYear();
     const startYear = 2012;
 
-    const value = currentYear - startYear;
-    return value;
+    return currentYear - startYear;
 };
 
 function render(resume) {
@@ -49,7 +48,7 @@ function render(resume) {
     const css = fs.readFileSync(__dirname + '/assets/css/theme.css', 'utf-8');
 
     resume.basics.picture = generateProfilePicture(resume.basics.picture);
-    resume.basics.summary = convertMarkdown(resume.basics.summary.replace(/{n}/g, careerLength()));
+    resume.basics.summary = convertMarkdown(resume.basics.summary.replace(/{n}/g, yearsOfExperience()));
     resume.basics.computed_location = _.compact(addressValues).join(', ');
 
     _(resume.basics.profiles).forEach(profile => {
