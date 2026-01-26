@@ -38,10 +38,21 @@
   },
   "work": [
     {
+      "name": "Sera",
+      "position": "Senior Frontend developer",
+      "url": "https://sera.nl/",
+      "startDate": "2026-01-02",
+      "summary": "Whether it's sports & recreation, education, rentals, or local media – SERA creates software that drives organizations forward. We combine technology with marketing and consulting, so you not only work more efficiently but also create space for growth.",
+      "highlights": [
+        "**Stack**: Vue.js, PHP, Bootstrap, CSS, Webpack, Lodash, SCSS, gitlab"
+      ]
+    },
+    {
       "name": "EclecticIQ",
       "position": "Senior Frontend developer",
       "url": "https://eclecticiq.com/",
       "startDate": "2021-10-01",
+      "endDate": "2025-12-31",
       "summary": "EclecticIQ is a global cybersecurity company providing an advanced AI-embedded Threat Intelligence Platform that helps organizations detect, analyze, and respond to critical cyber threats.",
       "highlights": [
         "**Modernization & Migration** – Led the migration of a large-scale React codebase to newer versions, improving performance and maintainability. Also led transition from JavaScript to TypeScript.",
